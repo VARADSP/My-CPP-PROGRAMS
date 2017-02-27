@@ -1,0 +1,20 @@
+//missarg.cpp
+//demo for missing and default arguments
+#include<iostream>
+using namespace std;
+void repchar(char='*',int=45);
+int main()
+ {
+ repchar();
+ repchar('=');
+ repchar('+',30);
+ return 0;
+ }
+ //repchar()
+ void repchar(char ch,int n)
+ {
+     for(int j=0;j<n;j++)
+        cout << ch;
+     cout << endl;
+
+ }
